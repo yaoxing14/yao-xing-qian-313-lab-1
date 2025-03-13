@@ -325,6 +325,23 @@ star_data %>%
 
 4.  Plot `y` vs. `x` for the `circle` dataset. You can (and should) reuse code we introduced above, just replace the dataset name with the desired dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset. How does this value compare to the `r` of `dino`?
 
+The data points are distributed in a circular pattern, which indicates that there is no linear relationship. The correlation coefficient is very close to the "r" of "dino", indicating that their linear correlation is weak in statistics.
+
+```{r}
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+```
+
+```{r}
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+
+```{r}
+circle_data %>%
+  summarize(r = cor(x, y))
+```
+
 🧶 ✅ ⬆️ *You should pause again, commit changes with the commit message "Added answer for Ex 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 ```{marginfigure}
