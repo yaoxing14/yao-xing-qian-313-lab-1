@@ -306,7 +306,7 @@ dino_data %>%
 
 3.  Plot `y` vs. `x` for the `star` dataset. You can (and should) reuse code we introduced above, just replace the dataset name with the desired dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset. How does this value compare to the `r` of `dino`?
 
- The point distribution of the star dataset shows a star-shaped structure, indicating that there is no linear correlation with the data.
+ The point distribution of the star dataset shows a star-shaped structure, indicating that there is no linear correlation with the data.The “r” correlation coefficient of “dino” is very close, indicating that they are both weakly linearly correlated in statistics.
 
 ```{r}
 star_data <- datasaurus_dozen %>%
