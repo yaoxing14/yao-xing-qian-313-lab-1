@@ -1,7 +1,7 @@
 ---
 title: "Lab 01 - Hello R!"
 author: "yao"
-output: 
+output:
   tufte::tufte_html:
     css: ../lab.css
     tufte_variant: "envisioned"
@@ -355,6 +355,7 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
   geom_point()+
   facet_wrap(~ dataset, ncol = 3) +
   theme(legend.position = "none")
+
 ```
 
 And we can use the `group_by` function to generate all the summary correlation coefficients.
