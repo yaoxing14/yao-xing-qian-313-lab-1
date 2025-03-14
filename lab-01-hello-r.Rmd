@@ -7,7 +7,9 @@ output:
     tufte_variant: "envisioned"
     highlight: pygments
 link-citations: true
+
 ---
+
 
 ```{marginfigure}
 R is the name of the programming language itself and RStudio is a convenient interface.
